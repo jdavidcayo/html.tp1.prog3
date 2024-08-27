@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>html-tp1.prog3</title>
+</head>
+
+<body>
+
+  <!-- Navegacion -->
+  <nav>
+    <ul>
+      <li><a href="#estructura">Estructura</a></li>
+      <li><a href="#listas">Listas</a></li>
+      <li><a href="#elementosMultimedia">Elementos Multimedia</a></li>
+      <li><a href="#formulario">Formularios</a></li>
+      <li><a href="#semantica">Semántica</a></li>
+    </ul>
+  </nav>
+  <h1>Trabajo Práctico de HTML</h1>
+
+  <!-- Estructura del documento HTML -->
+  <section id="estructura">
+  <h2>Estructura Basica del Documento HTML</h2>
+  <p>Este documento HTML tiene una estructura basica que incluye la declaracion del DOCTYPE, etiquetas de metadatos y un
+    titulo</p>
+    
+  <h2>Encabezados y propiedades del texto</h2>
+  <h3>Negrita</h3>
+  <p style="font-weight: bold;">Esto es un texto en negrita.</p>
+
+  <h3>Cursiva</h3>
+  <p style="font-style: italic;">Esto es un texto en cursiva</p>
+
+  <h3>Subrayado</h3>
+  <p style="text-decoration: underline;">Esto es un texto subrayado</p>
+
+  <h2>Divisiones y agrupacion de contenido</h2>
+  <h3>Seccion 1</h3>
+  <div>
+    <p>Contenido de la primera seccion agrupada en un div</p>
+  </div>
+
+  <h3>Seccion 2</h3>
+  <div>
+    <p>Contenido de la segunda seccion agrupada en un div</p>
+  </div>
+  </section>
+
+  <!-- Listas y enlaces -->
+  <section id="listas">
+    <h2>Enlaces y listas</h2>
+
+    <p>Visitar google <a href="https://google.com.ar">Google</a></p>
+
+    <p>Enlaces internos</p>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#final">Final del documento</a></li>
+    </ul>
+
+    <p>Lista ordenada</p>
+    <ol>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+    </ol>
+
+    <p>Lista desordenada</p>
+    <ul>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+    </ul>
+  </section>
+
+  <!-- Elementos multimedia y tablas -->
+  <section id="elementosMultimedia">
+    <h2>Elementos multimedia</h2>
+    <h3>Imagen</h3>
+    <img src="https://picsum.photos/seed/picsum/200/300" alt="Imagen random desde lorem-picsum">
+
+    <h3>Video</h3>
+    <video src="video-mar.mp4" controls width="300px"></video>
+
+    <h3>Audio</h3>
+    <audio src="liftoff.mp3" controls></audio>
+
+    <h2>Tablas</h2>
+    <table border="1">
+      <thead ">
+      <tr>
+        <th>id</th>
+        <th>nombre</th>
+        <th>apellido</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>juan</td>
+        <td>perez</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>maria</td>
+        <td>gomez</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- Formularios -->
+<section id="formulario">
+  <h2>Formularios</h2>
+  <form action=" /contacto" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+
+        <input type="submit" value="Enviar">
+        </form>
+
+        <section id="semantica">
+          <h2>8. Semántica en HTML</h2>
+          <p>En este documento se ha respetado la semántica del HTML utilizando etiquetas como nav, section, header,footer, etc</p>
+          <p>Las etiquetas semánticas facilitan la comprensión del contenido tanto para los usuarios como para los
+            motores
+            de búsqueda, mejorando la accesibilidad y el SEO.</p>
+        </section>
+  </section>
+
+  <!-- Pie de pagina -->
+  <footer id="final">
+    <p>&copy; 2024 Trabajo Práctico de HTML</p>
+  </footer>
+
+</body>
+
+</html>
